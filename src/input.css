@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+html {
+    @apply scroll-smooth;
+}
+
+nav {
+    @apply bg-black/85 w-1/5 h-screen fixed left-0 top-0 flex flex-col justify-between;
+}
+
+.logo {
+    @apply bg-indigo-500 p-3 text-center;
+}
+
+.logo a {
+    @apply border bg-indigo-500 block p-12 font-extrabold text-2xl text-white;
+}
+
+.sidebar-menu {
+    @apply p-5;
+}
+
+.sidebar-menu a {
+    @apply text-white capitalize p-2 block text-lg;
+}
+
+.social-menu {
+    @apply p-5 text-center;
+}
+
+.social-menu li {
+    @apply inline-block;
+}
+
+.social-menu a {
+    @apply text-white p-2 block text-lg;
+}
+
+.sidebar-menu li.active ::before {
+    @apply content-[''] w-[30px] h-[1px] bg-white inline-block relative top-[-5px] mr-[10px];
+}
+
+.sidebar-menu a {
+    @apply text-white capitalize p-2 inline-block text-lg before:content-[''] before:w-2 before:h-2 before:inline-block before:rounded-full before:border before:mr-3 hover:before:bg-white;
+}
+
+header {
+    @apply fixed top-0 z-50 left-0 right-0;
+}
+
+.header-menu {
+    @apply bg-black/80 py-3 transition-all duration-500;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.header-menu.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header-menu a {
+    @apply text-white capitalize p-3 block hover:text-gray-500;
+}
+#home {
+    @apply p-0;
+}
+#home .swiper-button-next,
+#home .swiper-button-prev {
+    @apply bg-black/80 hover:bg-indigo-600 !text-white hover:!text-white z-50 !left-auto !right-50 !top-20 !w-12 !h-13;
+
+}
+
+#home .swiper-button-next {
+    @apply !top-15 !right-20;
+}
+#home .swiper-button-prev {
+    @apply !top-15 !right-35;
+}
+
+#home .swiper {
+    @apply h-screen;
+}
+
+#home .swiper-wrapper .content {
+    @apply absolute right-20 top-1/2 z-50 w-1/3 text-white text-right -translate-y-1/2;
+
+}
+
+#home .swiper-slide img {
+    @apply h-full w-full object-cover;
+}
+
+.title {
+    @apply lg:w-2/3 flex flex-wrap gap-y-5 lg:gap-0;
+}
+
+ .title h2 {
+    @apply  text-3xl capitalize md:w-1/3;
+}
+ .title h2 span {
+    @apply font-bold text-3xl text-indigo-600 block;
+}
+
+ .title p {
+    @apply md:w-2/3;
+}
+/* feature */
+#featured img {
+    @apply w-full h-[25rem] object-cover;
+}
+#featured h2 {
+    @apply text-2xl my-3;
+}
+#featured p {
+    @apply text-gray-500 text-sm my-2 leading-6;
+}
+#featured {
+    @apply relative;
+}
+#featured .swiper-button-next,
+#featured .swiper-button-prev {
+    @apply bg-gray-500 hover:bg-indigo-600 !text-black hover:!text-white z-50 !left-auto !right-50 !top-20 !w-12 !h-13 ;
+}
+
+#featured .swiper-button-next {
+    @apply !right-15 !top-15;
+}
+#featured .swiper-button-prev {
+    @apply !top-15 !right-30;
+}
+#featured .swiper-pagination {
+    @apply !bottom-0;
+}
+/* recent  */
+
+#work .item {
+    @apply after:content-[''] after:w-full after:bg-white/80 after:block after:absolute after:top-0 after:left-0 after:opacity-100 after:transition-all duration-700;
+}
+
+
+#contact input,
+#contact textarea {
+    @apply bg-gray-100 p-3 border border-gray-200 outline-0 text-sm;
+}
+#contact button {
+    @apply bg-indigo-600 text-white text-center p-3 font-bold hover:bg-gray-100 hover:text-indigo-600 transition-all duration-500 text-sm;
+}
+#entries img {
+    @apply w-1/3 h-60 object-cover;
+}
+
+
+
+
+
+
+
+
+
+
+

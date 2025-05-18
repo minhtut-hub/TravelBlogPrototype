@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlog</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+
+
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="!hidden lg:!block z-50">
+        <div class="logo">
+            <a href="#">SEN<span class="font-light">TRA</span></a>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="active"><a href="#home">home</a></li>
+            <li><a href="#featured">feature</a></li>
+            <li><a href="#work">recent work</a></li>
+            <li><a href="#presentation">presentation</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <ul class="social-menu">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+        </ul>
+    </nav>
+
+    <header class="text-center lg:hidden">
+        <div class="bg-gray-300">
+            <button class="p-3 text-2xl cursor-pointer" id="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <ul class="header-menu">
+            <li><a href="#home">home</a></li>
+            <li><a href="#feature">feature</a></li>
+            <li><a href="#work">recent work</a></li>
+            <li><a href="#presentation">pressentation</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </header>
+
+
+    <section id="home">
+        <!-- Slider main container -->
+        <div class="swiper home-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="img/bg-1.jpg" alt="">
+                    <div class="content">
+                        <h1 class="text-4xl capitalize font-extrabold mb-5">Please tell your friend</h1>
+                        <p class="leading-9 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <a href="#"
+                            class="text-indigo-600 bg-white p-3 inline-block rounded text-sm font-bold hover:bg-indigo-600 hover:text-white transition-all">Discover
+                            More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/bg-2.jpg" alt="">
+                    <div class="content">
+                        <h1 class="text-4xl capitalize font-extrabold mb-5">Beautiful place to enjoy</h1>
+                        <p class="leading-9 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <a href="#"
+                            class="text-indigo-600 bg-white p-3 inline-block rounded text-sm font-bold hover:bg-indigo-600 hover:text-white transition-all">Booking</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/bg-4.jpg" alt="">
+                    <div class="content">
+                        <h1 class="text-4xl capitalize font-extrabold mb-5">embark your journey</h1>
+                        <p class="leading-9 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <a href="#"
+                            class="text-indigo-600 bg-white p-3 inline-block rounded text-sm font-bold hover:bg-indigo-600 hover:text-white transition-all">share
+                            More</a>
+                    </div>
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <!-- Feature -->
+    <div class="w-full lg:w-4/5 ml-auto p-5">
+        <section id="featured" class="py-8">
+            <div class="swiper featured-swiper py-8">
+                <div class="title py-8">
+                    <h2>featured <span>place</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore animi vel accusantium quo
+                        laborum, quaerat a nihil</p>
+                </div>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper py-6">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img/F-1.jpg" alt="">
+                        <div>
+                            <h1>Lorem, ipsum.</h1>
+                            <p class="!text-lg capitalize font-bold"></p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/F-2.jpg" alt="">
+                        <div>
+                            <h2>Lorem, ipsum.</h2>
+                            <p class="!text-lg capitalize font-bold"></p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/F-3.jpg" alt="">
+                        <div>
+                            <h2>Lorem, ipsum.</h2>
+                            <p class="!text-lg capitalize font-bold"></p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/F-4.jpg" alt="">
+                        <div>
+                            <h2>Lorem, ipsum.</h2>
+                            <p class="!text-lg capitalize font-bold"></p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/F-5.jpg" alt="">
+                        <div>
+                            <h2>Lorem, ipsum.</h2>
+                            <p class="!text-lg capitalize font-bold"></p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/F-6.jpg" alt="">
+                        <div>
+                            <h2>Lorem, ipsum.</h2>
+                            <p class="!text-lg capitalize font-bold"></p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/F-7.jpg" alt="">
+                        <div>
+                            <h2>Lorem, ipsum.</h2>
+                            <p class="!text-lg capitalize font-bold"></p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/F-8.jpg" alt="">
+                        <div>
+                            <h2>Lorem, ipsum.</h2>
+                            <p class="!text-lg capitalize font-bold"></p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/F-9.jpg" alt="">
+                        <div>
+                            <h2>Lorem, ipsum.</h2>
+                            <p class="!text-lg capitalize font-bold"></p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <!-- ... -->
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+
+            </div>
+        </section>
+    </div>
+
+    <!-- work -->
+    <div class="w-full lg:w-4/5 ml-auto p-5">
+        <section id="work" class="py-8">
+            <div class="title py-8">
+                <h2>Recent<span>Project</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique?</p>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-4">
+                <div class="item lg:col-span-2 lg:row-span-2 ">
+                    <img src="img/P-1.jpg" alt="" class="w-full aspect-video h-full object-fit-cover">
+                </div>
+                <div class="item">
+                    <img src="img/P-2.jpg" alt="" class="w-full h-full aspect-video object-fit-cover">
+                </div>
+                <div class="item">
+                    <img src="img/P-3.jpg" alt="" class="w-full h-full aspect-video object-fit-cover">
+                </div>
+                <div class="item">
+                    <img src="img/p-4.jpg" alt="" class="w-full h-full aspect-video object-fit-cover">
+                </div>
+                <div class="item sm:col-span-2">
+                    <img src="img/P-5.jpg" alt="" class="w-full h-full aspect-video object-fit-cover">
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+    <!-- presentation -->
+    <div class="w-full lg:w-4/5 ml-auto p-5">
+        <section id="presentation" class="py-16 bg-gray-100">
+            <div class="text-center py-8">
+                <h1 class="text-3xl mb-6">
+                    This is a
+                    <span class="text-indigo-600 font-bold">company</span> presentation
+                </h1>
+                <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores adipisci, officia
+                    corporis
+                    nesciunt voluptatem ut architecto soluta. Voluptatum illo dolorem quis vel! Cumque sapiente quis
+                    eum,
+                    totam adipisci sed quae!</p>
+                <p class="mb-5 font-extralight">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias autem
+                    sint,
+                    odit omnis quam tenetur qui esse explicabo dolorem asperiores blanditiis aliquam quod provident
+                    reprehenderit. Animi eos inventore non ex!</p>
+                <a href="#"
+                    class="bg-indigo-600 text-white font-bold px-4 py-2 inline-block hover:bg-white hover:text-indigo-600">continue
+                    reading</a>
+            </div>
+            <div class="py-8">
+                <iframe width="100%" class="aspect-video"
+                    src="https://www.youtube.com/embed/1fueZCTYkpA?si=WQMZmYQ3K02-cMS0" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+
+    <!-- entries -->
+    <div class="w-full lg:w-4/5 ml-auto p-5">
+        <section id="blog">
+            <div class="title">
+                <h2>Blog <span>entries</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, officiis, odit ullam unde enim
+                    esse debitis magni </p>
+            </div>
+            <div class="bg-gray-200 my-10" x-data="{item: 'July'} ">
+                <ul class="grid grid-cols-4 border-b-8 border-b-indigo-600">
+                    <li class="text-center">
+                        <a class="block p-3 lg:p-10 font-bold text-sm lg:text-lg"
+                            :class="item == 'july' ? 'bg-indigo-600 text-white': '' " href="#"
+                            @click.prevent="item='july'">July
+                            2025</a>
+                    </li>
+                    <li class="text-center"><a class="block p-3 lg:p-10 font-bold text-sm lg:text-lg"
+                            :class="item == 'june' ? 'bg-indigo-600 text-white': '' " href="#"
+                            @click.prevent="item='june' ">June
+                            2025</a></li>
+                    <li class="text-center"><a class="block p-3 lg:p-10 font-bold text-sm lg:text-lg"
+                            :class="item =='may' ? 'bg-indigo-600 text-white' : '' " href="#"
+                            @click.prevent="item='may'">May
+                            2025</a></li>
+                    <li class="text-center"><a class="block p-3 lg:p-10 font-bold text-sm lg:text-lg"
+                            :class="item =='april' ? 'bg-indigo-600 text-white' : '' " href="#"
+                            @click.prevent="item='april'">April
+                            2025</a></li>
+                </ul>
+                <div class="p-7">
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'july' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/London-1.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 July 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'july' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/London-2.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 July 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'july' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/London-3.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 July 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'june' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/A-1.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 June 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'june' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/A-2.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 June 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'june' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/A-3.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 June 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'may' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/P-1.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 May 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'may' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/P-2.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 May 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'may' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/P-3.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 May 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'april' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/p-4.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 April 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'april' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/P-5.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 Apri; 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-wrap border-b py-5 border-gray-300" x-show="item == 'april' ">
+                        <div class=" w-full md:w-2/5">
+                            <img src="img/London-1.jpg" alt="" class="w-full aspect-video object-cover">
+                        </div>
+                        <div class="w-full md:w-3/5 py-3 px-9">
+                            <h2 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet.</h2>
+                            <h3 class="text-gray-500 font-bold mb-3">25 April 2025</h3>
+                            <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora, veniam dignissimos reiciendis pariatur temporibus aut culpa laborum similique
+                                hic ex obcaecati. Ipsam eum illo quo fuga facere officia error fugit.</p>
+                            <a href="#"
+                                class="bg-indigo-600 text-white p-4 inline-block font-bold text-sm hover:bg-white hover:text-indigo-600">Continue
+                                Reading</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="w-full lg:w-4/5 ml-auto p-5 ">
+        <section class="!px-0">
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24108.249722031836!2d100.58587924999999!3d14.0641414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sth!4v1746969853874!5m2!1sen!2sth"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <div class="w-full lg:w-4/5 ml-auto p-5">
+        <section id="contact">
+            <div class="title">
+                <h2>contact <span>sentra</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis nesciunt reiciendis
+                    veritatis!
+                    Sapiente perferendis dolor repudiandae inventore volupt</p>
+
+            </div>
+            <form action="">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 py-8">
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <textarea name="message" id="message" rows="10" placeholder="Your Message"
+                        class="md:col-span-3 "></textarea>
+                    <button type="submit" class="md:col-span-3">Send Message Now</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer class="text-center py-5 bg-black text-white">
+        <p> &copy; copyright. 2025 Maxcompany. Design: Min Htut Myat</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
