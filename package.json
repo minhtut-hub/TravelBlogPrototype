@@ -4,8 +4,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css"
+=======
+    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    
+>>>>>>> 80f39dd7beb2e07a4950dfdb36bda220856ede46
   },
   "author": "",
   "license": "ISC",
